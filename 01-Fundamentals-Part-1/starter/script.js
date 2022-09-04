@@ -1,13 +1,13 @@
 let js = "amazing";
 console.log(4 + 12 + 83 + 5);
 
-console.log('Jonas');
+console.log("Jonas");
 console.log(45);
 
-let firstName = 'Jonas' //declaring value of variable
-let first = 'jonas'
-let firstNamePerson //camelCase in JS
-let first_name_ //f.e. in Ruby programming language
+let firstName = "Jonas"; //declaring value of variable
+let first = "jonas";
+let firstNamePerson; //camelCase in JS
+let first_name_; //f.e. in Ruby programming language
 
 console.log(firstName);
 
@@ -16,8 +16,8 @@ let 3 = hsdg //number as a name of variables
 let new = 36 //reserved key words (function, $ & only"name", start with upperCase letter)
 */
 
-let myFirstJob = 'programmer'
-let myCurrentJob = 'teacher' //these are more expressive name of variables
+let myFirstJob = "programmer";
+let myCurrentJob = "teacher"; //these are more expressive name of variables
 
 console.log(myFirstJob);
 
@@ -32,15 +32,15 @@ console.log(myFirstJob);
 // 7. BigInt (ES2020) larger integers than the Number type can hold
 
 // dynamic typing = automatically determined data types!!!
-let jsIsFun = true
+let jsIsFun = true;
 console.log(jsIsFun);
 
 console.log(typeof jsIsFun);
 console.log(typeof false);
-console.log(typeof 'mamma');
+console.log(typeof "mamma");
 console.log(typeof null);
 
-jsIsFun = 'YES!'
+jsIsFun = "YES!";
 console.log(jsIsFun);
 console.log(typeof jsIsFun);
 
@@ -50,3 +50,11 @@ console.log(year);
 year = 1985;
 console.log(typeof year);
 
+//do not repeat the same values f.e.
+
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+// concatenation + String vs. `template String`
