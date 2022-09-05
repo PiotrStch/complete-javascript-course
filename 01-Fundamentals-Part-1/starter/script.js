@@ -99,3 +99,13 @@ const bmiJohn2 = massJohn2 / heightJohn2 ** 2;
 const markHigherBMI2 = bmiMark < bmiJohn;
 console.log(markHigherBMI2);
 console.log(bmiJohn2);
+
+//multiple lines old version
+console.log('string with \n\
+multiple\n\
+lines');
+
+//multiple lines new version with backsticks
+console.log(`String
+multiple
+lines`);
