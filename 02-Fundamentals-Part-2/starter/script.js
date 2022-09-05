@@ -28,4 +28,39 @@ function fruitProcessor(apples, oranges) {
 const appleJuice = fruitProcessor(4, 0);
 console.log(appleJuice);
 
-const num4 = Number("36")
+const num4 = Number("36");
+
+// Function declaration
+function calcAge1(birthYear) {
+	//parameter
+	// const age = 2037 - birthYear;
+	// return age;
+	return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991); //argument
+console.log(age1);
+
+// Function expression
+const calcAge2 = function (birthYear) {
+	//annonymous function
+	return 2037 - birthYear;
+};
+
+const age2 = calcAge2(1985);
+console.log(age1, age2);
+
+// ARROW FUNCTION
+
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+	const age = 2037 - birthYear;
+	const retirement = 65 - age;
+	// return retirement;
+	return `${firstName} retires in ${retirement} years.`;
+};
+
+console.log(yearsUntilRetirement(1991, "Piotr"));
