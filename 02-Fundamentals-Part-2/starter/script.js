@@ -79,3 +79,22 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+let resultDolph = calcAverage(44, 23, 71);
+let resultKoala = calcAverage(65, 54, 49);
+
+const checkWinners = function (resultDolph, resultKoala) {
+	if (resultDolph > resultKoala) {
+		console.log(`Dolphins win (${resultDolph} vs. ${resultKoala})`);
+	} else {
+					console.log(`Koalas win (${resultKoala} vs. ${resultDolph})`)
+	}
+	}
+
+checkWinners(resultDolph, resultKoala)
+
+resultDolph = calcAverage(59,166,45)
+resultKoala = calcAverage(1, 12, 5)
+checkWinners(resultDolph, resultKoala)
