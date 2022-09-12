@@ -1,6 +1,6 @@
 "use strict"; //pomaga znaleźć błędy
 
-let hasDriversLicense = false;
+/*let hasDriversLicense = false;
 const passTest = true;
 
 if (passTest) hasDriversLicense = true;
@@ -97,4 +97,49 @@ checkWinners(resultDolph, resultKoala)
 
 resultDolph = calcAverage(59,166,45)
 resultKoala = calcAverage(1, 12, 5)
-checkWinners(resultDolph, resultKoala)
+checkWinners(resultDolph, resultKoala)*/
+
+const friend1 = "Michael";
+const friend2 = "Steven";
+const firend3 = "Peter";
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(friends[0]);
+
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+const firstName = "Jonas";
+const jonas = [firstName, "Schmedtmann", 2037 - 1991, friends]; // możemy miksować różne typy danych, zmiennych, tablic w tablicach
+
+// exercise
+const calcAge = function (birthYear) {
+	return 2037 - birthYear;
+};
+const yearss = [1991, 1984, 2008, 2020];
+const age1 = calcAge(yearss[0]);
+const age2 = calcAge(yearss[1]);
+const age3 = calcAge(yearss[years.length - 1]);
+
+console.log(age1, age2, age3);
+const ages = [
+	calcAge(yearss[0]),
+	calcAge(yearss[1]),
+	calcAge(yearss[years.length - 1]),
+];
+console.log(ages);
+
+const newLength = friends.push("Marek");
+console.log(friends);
+console.log(newLength); //??
+
+if (friends.includes("Steven")) {
+	console.log(`you have a friend called Peter`);
+} else {
+	console.log(`you don't have any friends`);
+}
